@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Job Detail{% endblock %}
+
+{% block content %}
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1>Job Detail</h1>
+        <img class="py-4 img-responsive" src="{{ job.image.url }}" height="480" width="100%" style="object-fit:cover;">
+        <p class="lead text-muted">{{ job.summary }}</p>
+        <p>
+            <a href="{% url 'home' %}" class="btn btn-primary my-2">Home</a>
+        </p>
+    </div>
+</section>
+{% endblock %}
